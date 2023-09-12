@@ -1,0 +1,25 @@
+.hidden {
+    display: none;
+}
+body::before {
+    content: '';
+    background-image: url(''); /* Initially set to nothing, JavaScript will update this */
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Keep the background behind your content */
+}
+body {
+    color: white;
+}
+#greeting {
+    color: aliceblue;
+}
+
+#todo-list li {
+    color: white;
+}
